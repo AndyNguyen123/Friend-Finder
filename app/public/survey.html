@@ -187,16 +187,19 @@
             </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <script>
         $('button').on('click', () => {
             const answerArray = [];
-            for(let i = 1; i<=10; i++) {
+            for (let i = 1; i <= 10; i++) {
                 const answerID = $(`input[type=radio][name=q${i}]:checked`).attr('id');
-                const answerIndex = answerID.split('')[answerID.length-1];
+                const answerIndex = answerID.split('')[answerID.length - 1];
                 answerArray.push(Number(answerIndex));
             }
-            console.log(answerArray);
-        })
+            $.post("/survey",{data: answerArray}, data => {
+                console.log(data);
+            });
+        });
     </script>
 </body>
 
