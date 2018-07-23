@@ -1,18 +1,203 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Survey</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-       Hello World
-        <script src="" async defer></script>
-    </body>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>So You Play Dota 2...</h1>
+            </div>
+        </div>
+        <img(src="/miracle.jpeg" , alt="Testing Image">
+            <div class="row">
+                <div class="col-md-12" id="question-section">
+                    <div id='q1'>
+                        <h3>1. What is your favorite dota 2 player?</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="1-1" name="q1" class="custom-control-input" />
+                            <label class="custom-control-label" for="1-1">Miracle</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="1-2" name="q1" class="custom-control-input" />
+                            <label class="custom-control-label" for="1-2">Sumail</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="1-3" name="q1" class="custom-control-input" />
+                            <label class="custom-control-label" for="1-3">Dendi</label>
+                        </div>
+                    </div>
+
+                    <div id='q2'>
+                        <h3>2. What is your fav hero type?</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="2-1" name="q2" class="custom-control-input" />
+                            <label class="custom-control-label" for="2-1">Invoker, Shadow Fiend, Meepo</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="2-2" name="q2" class="custom-control-input" />
+                            <label class="custom-control-label" for="2-2">Anti Mage, Sven, Vengeful Spirit</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="2-3" name="q2" class="custom-control-input" />
+                            <label class="custom-control-label" for="2-3">Techies</label>
+                        </div>
+                    </div>
+
+                    <div id='q3'>
+                        <h3>3. You often play as a:</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="3-1" name="q3" class="custom-control-input" />
+                            <label class="custom-control-label" for="3-1">Support</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="3-2" name="q3" class="custom-control-input" />
+                            <label class="custom-control-label" for="3-2">Carry on a support hero</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="3-3" name="q3" class="custom-control-input" />
+                            <label class="custom-control-label" for="3-3">Carry hero but somehow ended up as a support with 2k networth at 30min</label>
+                        </div>
+                    </div>
+
+                    <div id='q4'>
+                        <h3>4. What's the first thing you said when the game start?</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="4-1" name="q4" class="custom-control-input" />
+                            <label class="custom-control-label" for="4-1">"Good luck, have fun!!"</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="4-2" name="q4" class="custom-control-input" />
+                            <label class="custom-control-label" for="4-2">"Safe lane please, I'll carry after my Battle Fury"</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="4-3" name="q4" class="custom-control-input" />
+                            <label class="custom-control-label" for="4-3">"Mid or Feed"</label>
+                        </div>
+                    </div>
+
+                    <div id='q5'>
+                        <h3>5. Would you rather:</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="5-1" name="q5" class="custom-control-input" />
+                            <label class="custom-control-label" for="5-1">Sacrifice your life to save your position 5 support</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="5-2" name="q5" class="custom-control-input" />
+                            <label class="custom-control-label" for="5-2">Dive tower as a carry just to get that Crystal Maiden kill</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="5-3" name="q5" class="custom-control-input" />
+                            <label class="custom-control-label" for="5-3">Chilling in the jungle while your teammate fighting 4v5 and then join the fight 30 min later
+                                and die without buyback</label>
+                        </div>
+                    </div>
+
+                    <div id='q6'>
+                        <h3>6. What happen when your teammate steals a kill from you?</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="6-1" name="q6" class="custom-control-input" />
+                            <label class="custom-control-label" for="6-1">"All good, mate!"</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="6-2" name="q6" class="custom-control-input" />
+                            <label class="custom-control-label" for="6-2">All chat "good game, well play!"</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="6-3" name="q6" class="custom-control-input" />
+                            <label class="custom-control-label" for="6-3">"Cyka blyat idi nahui!!"</label>
+                        </div>
+                    </div>
+                    <div id='q7'>
+                        <h3>7. What happen when you steals a kill from your mate?</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="7-1" name="q7" class="custom-control-input" />
+                            <label class="custom-control-label" for="7-1">Said sorry and paid back a kill later</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="7-2" name="q7" class="custom-control-input" />
+                            <label class="custom-control-label" for="7-2">Pretends nothing happen</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="7-3" name="q7" class="custom-control-input" />
+                            <label class="custom-control-label" for="7-3">"jajajajajajajajaja"</label>
+                        </div>
+                    </div>
+                    <div id='q8'>
+                        <h3>8. What is your steam profile picture?</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="8-1" name="q8" class="custom-control-input" />
+                            <label class="custom-control-label" for="8-1">An anime character</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="8-2" name="q8" class="custom-control-input" />
+                            <label class="custom-control-label" for="8-2">No profile picture</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="8-3" name="q8" class="custom-control-input" />
+                            <label class="custom-control-label" for="8-3">Some sort of bobs and vagene</label>
+                        </div>
+                    </div>
+                    <div id='q9'>
+                        <h3>9. What is your reaction when Navi lost?</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="9-1" name="q9" class="custom-control-input" />
+                            <label class="custom-control-label" for="9-1">"Disband please!!"</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="9-2" name="q9" class="custom-control-input" />
+                            <label class="custom-control-label" for="9-2">"Navi is back. Kappa!"</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="9-3" name="q9" class="custom-control-input" />
+                            <label class="custom-control-label" for="9-3">"Win a TI before you talk"</label>
+                        </div>
+                    </div>
+                    <div id='q10'>
+                        <h3>10. Pick one that best describe you as a Dota 2 player:</h3>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="10-1" name="q10" class="custom-control-input" />
+                            <label class="custom-control-label" for="10-1">Positive mental attitude, always enjoy the game regardless of the result</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="10-2" name="q10" class="custom-control-input" />
+                            <label class="custom-control-label" for="10-2">"Mid or Feed please!", Go mid then feed, rage quit</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="10-3" name="q10" class="custom-control-input" />
+                            <label class="custom-control-label" for="10-3">Always pick carry, always end up at the bottom of the networth, somehow got carried by teammate,
+                                win game and never forget to include "ez game, ez life"</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Submit Survey</button>
+                </div>
+            </div>
+    </div>
+
+    <script>
+        $('button').on('click', () => {
+            const answerArray = [];
+            for(let i = 1; i<=10; i++) {
+                const answerID = $(`input[type=radio][name=q${i}]:checked`).attr('id');
+                const answerIndex = answerID.split('')[answerID.length-1];
+                answerArray.push(Number(answerIndex));
+            }
+            console.log(answerArray);
+        })
+    </script>
+</body>
+
 </html>
