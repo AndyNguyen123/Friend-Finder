@@ -7,12 +7,12 @@ router.get('/survey', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
 });
 
-function compareTwoArray (array1, array2) {
+function compareTwoArray(array1, array2) {
     let resultArray = [];
-    for(let i=0; i<array1.length; i++) {
+    for (let i = 0; i < array1.length; i++) {
         resultArray.push(Math.abs(array1[i] - array2[i]));
     }
-    return resultArray.reduce((a,b) => a+b);
+    return resultArray.reduce((a, b) => a + b);
 }
 
 router.post('/survey', (req, res) => {
@@ -26,11 +26,13 @@ router.post('/survey', (req, res) => {
         });
         index++;
     })
-    Math.min(...playerObjArray.map(ele => ele.score))
-    res.send('respond from server');
+    const result = players[playerObjArray.findIndex(ele => {
+        return ele.score == Math.min(...playerObjArray.map(ele => ele.score))
+    })];
+    res.send(result);
 });
 
-router.get('/', (req,res) => {
+router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/home.html"));
 });
 

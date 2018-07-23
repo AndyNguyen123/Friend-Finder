@@ -13,6 +13,15 @@
 </head>
 
 <body>
+    <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-3">
+                <h4></h4>
+                <img src="" style ="width: 400px; height: 400px;" />
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -187,6 +196,8 @@
             </div>
     </div>
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
     <script>
         $('button').on('click', () => {
@@ -196,8 +207,11 @@
                 const answerIndex = answerID.split('')[answerID.length - 1];
                 answerArray.push(Number(answerIndex));
             }
-            $.post("/survey",{data: answerArray}, data => {
-                console.log(data);
+            $.post("/survey", { data: answerArray }, data => {
+                $('.modal-content > h4').text(data.description);
+                $('.modal-content > img').attr('src', data.photo);
+
+                $('#myModal').modal('toggle');
             });
         });
     </script>
